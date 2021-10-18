@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #510E57 !important;
+}
+
+.font-color{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.font-color a{
+    color: white !important;
+    font-size: medium;
+    font-weight: 300;
+    margin-left: 10px;
+}
