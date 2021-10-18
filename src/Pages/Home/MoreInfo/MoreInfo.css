@@ -1,0 +1,12 @@
+.info-btn{
+    border: none;
+    padding: 10px 0px;
+    background-color: #F9F1DD;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.info-btn:hover{
+    background-color: #FDA951;
+    cursor: pointer;
+}

@@ -3,7 +3,7 @@
 }
 
 .font-color{
-    color: white;
+    color: white !important;
     font-size: larger;
     font-weight: bold;
 }
@@ -13,4 +13,9 @@
     font-size: medium;
     font-weight: 300;
     margin-left: 10px;
+}
+
+.font-color:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
 }

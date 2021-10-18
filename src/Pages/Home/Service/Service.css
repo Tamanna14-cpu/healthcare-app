@@ -1,0 +1,10 @@
+.share-icon{
+   background-color: #FCD87E;
+   border-radius: 100%;
+   padding: 15px;
+}
+
+.see-btn{
+   display: flex;
+   flex-direction: initial ;
+}

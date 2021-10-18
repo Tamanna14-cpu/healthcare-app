@@ -10,6 +10,8 @@ import Login from './Pages/Login/Login/Login';
 import Header from './Pages/Shared/Header/Header';
 import Home from './Pages/Home/Home/Home';
 import Footer from './Pages/Shared/Footer/Footer';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 
 
 function App() {
@@ -28,6 +30,9 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute path="/services/:id">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
             <Route path="*">
               <Notfound></Notfound>
             </Route>

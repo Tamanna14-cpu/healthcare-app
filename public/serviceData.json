@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Happiness",
+        "image": "serviceImg/service-1.jpg",
+        "subtitle": "Obsessing Over Someone? Read These 16 Ef...",
+        "description": "In a review of the relevant literature it is shown that happiness is statistically abnormal, consists of a discrete cluster of symptoms, is associated with a range of cognitive abnormalities, and probably reflects the abnormal functioning of the central nervous system.Ever thought about why you are depending so much on one person that has just entered your life. Think about your single life…how you used to live it…independent, happy, positive?Understand that, you do not have to depend on one person and try to live your life as you used to live when you were single. Your relationship status has just changed, not the way you live your life. Therefore, remind yourself… You’re enough!",
+        "date": "October 21, 2021",
+        "fee": 100
+    },
+    {
+        "id": 2,
+        "title": "loneliness",
+        "image": "serviceImg/service-2.jpg",
+        "subtitle": "The 7 Types Of Loneliness We Should Know...",
+        "description": "One type of loneliness can be referred to as situational or transitional loneliness. When you move to a new city, change a job, or even end a long-term relationship, you might feel a little lost. This adjustment period can cause you to feel lonely.For example, If you’ve moved to a new country, you might face language barriers that can make you miss home and your loved ones.",
+        "date": "October 20, 2021",
+        "fee": 200
+    },
+    {
+        "id": 3,
+        "title": "Mental Health",
+        "image": "serviceImg/service-3.jpg",
+        "subtitle": "The Lone Wolf: Who Is He? The Sigma Male...",
+        "description": "As capable as an alpha male is in leading others, they are not as subtle as sigma males in their approach. Sigma males have the right balance of self-reliance, thoughtfulness, and intelligence. He is a confident leader without an ounce of ego that needs validation from others.A sigma male isn’t a quitter and will find a practical solution to a problem instead of finding a way to escape the situation altogether. A sigma male’s priority as a leader is not their reputation but the fulfillment of their goals.",
+        "date": "October 19, 2021",
+        "fee": 240
+    },
+    {
+        "id": 4,
+        "title": "Self Help",
+        "image": "serviceImg/service-4.jpg",
+        "subtitle": "“I Feel Empty”: Why Do You Feel This Way And...",
+        "description": "Sleep and mental health are closely related. Poor sleep can result in poor mental health and vice versa. If you haven’t gotten enough sleep, then you might feel empty inside. A good night’s rest (at least 6-8 hours of sleep) is required to improve mental and emotional strength. When you’re sleep-deprived, you feel tired and that sets the stage for negative thinking.",
+        "date": "October 18, 2021",
+        "fee": 125
+    },
+    {
+        "id": 5,
+        "title": "Mental Health",
+        "image": "serviceImg/service-5.jpg",
+        "subtitle": "Having A BAD Mental Health Day? 7 Self-t...",
+        "description": "Hey, are you judging yourself for feeling this way? How about taking a big deep breath, exhale judgment, and inhale acceptance. Acceptance of the fact that we all have BAD Mental Health Days. Acceptance of the night that it is okay to feel this way.Acceptance of the reality that some days even your brain needs a day off! And all this more acceptance and fewer judgments that I am talking about stars by removing the barriers. Barriers that don’t allow your mind and body to sync.",
+        "date": "October 17, 2021",
+        "fee": 195
+    },
+    {
+        "id": 6,
+        "title": "Communication",
+        "image": "serviceImg/service-6.jpg",
+        "subtitle": "Work Boundaries Are Important Too & Here’s How...",
+        "description": "One of the most important parts when setting boundaries at work is to prioritize your values. Your values define you so when you feel like your values are not being respected at your workplace, let others know. It’s okay to take a break to spend time with your loved ones. It’s okay to say no to overtime. You don’t have to say “yes” all the time. Your work matters but so does your values.",
+        "date": "October 16, 2021",
+        "fee": 130
+    }
+]
