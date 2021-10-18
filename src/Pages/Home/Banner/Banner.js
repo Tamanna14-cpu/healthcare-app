@@ -9,7 +9,7 @@ const Banner = () => {
                 <div>
                     <input className="banner-input mt-3" type="text" name="search" placeholder="Search.." />
                 </div>
-                <div class="container mt-5">
+                <div class="container mt-5 extra-portion">
                     <div class="row">
                         <div class="col">
                             <h2>Quick Search</h2>

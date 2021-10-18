@@ -39,3 +39,12 @@
     background-color: #510E57;
     color: white;
 }
+
+
+
+/* make responsive */
+@media only screen and (max-width:688px) {
+    .extra-portion{
+        display: none;
+    }
+}
