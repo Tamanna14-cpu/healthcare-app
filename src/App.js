@@ -9,6 +9,7 @@ import Notfound from './Pages/Notfound/Notfound';
 import Login from './Pages/Login/Login/Login';
 import Header from './Pages/Shared/Header/Header';
 import Home from './Pages/Home/Home/Home';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Notfound></Notfound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>
