@@ -15,7 +15,6 @@ const ServiceDetails = () => {
 
     useEffect(() => {
 
-
         async function callApi() {
             let res = await fetch('../serviceData.json');
             res = await res.json();
