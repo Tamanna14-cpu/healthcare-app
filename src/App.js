@@ -14,6 +14,8 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import YourStory from './Pages/YourStory/YourStory';
 import Freebies from './Pages/Freebies/Freebies';
+import Team from './Pages/Team/Team';
+
 
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
+
             <PrivateRoute path="/services/:serviceId">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
@@ -39,9 +42,15 @@ function App() {
             <PrivateRoute path="/story">
               <YourStory></YourStory>
             </PrivateRoute>
+
             <PrivateRoute path="/freebies">
               <Freebies></Freebies>
             </PrivateRoute>
+
+
+            <Route path="/team">
+              <Team></Team>
+            </Route>
 
             <Route path="*">
               <Notfound></Notfound>

@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "ADHD",
+        "image": "team/gif/gif-1.gif"
+    },
+    {
+        "id": 2,
+        "title": "Anxiety Disorder",
+        "image": "team/gif/gif-4.gif"
+    },
+    {
+        "id": 3,
+        "title": "Brain Health",
+        "image": "team/gif/gif-3.gif"
+    },
+    {
+        "id": 4,
+        "title": "Meditation",
+        "image": "team/gif/gif-5.gif"
+    },
+    {
+        "id": 5,
+        "title": "Psychology",
+        "image": "team/gif/gif-6.gif"
+    },
+    {
+        "id": 6,
+        "title": "A-Z",
+        "image": "team/gif/gif-2.gif"
+    },
+    {
+        "id": 7,
+        "name": "Steven Gans, MD",
+        "title": "Psychiatrist",
+        "image": "team/members/steven-gans.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Amy Morin, LCSW",
+        "title": "Editor-in-Chief, Verywell Mind",
+        "image": "team/members/VW-MIND-Amy.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Carly Snyder, MD",
+        "title": "Psychiatry",
+        "image": "team/members/Carly-Snyder-MD.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Daniel B. Block, MD",
+        "title": "Psychopharmacology, Patient Advocacy",
+        "image": "team/members/block.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Sara Clark",
+        "title": "Mindfulness Teacher",
+        "image": "team/members/Sara-Clark.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Shaheen Lakhan, MD",
+        "title": " Neurologist",
+        "image": "team/members/Shaheen-Lakhan.jpg"
+    }
+]

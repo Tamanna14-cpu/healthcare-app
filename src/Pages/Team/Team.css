@@ -1,0 +1,11 @@
+.problem-part{
+    border: none;
+    background-color: white;
+    border-radius:  15px 50px;
+}
+
+.team-text{
+    color: #510E57;
+    font-size: 35px;
+    font-weight: bold;
+}
