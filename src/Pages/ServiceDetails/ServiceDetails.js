@@ -5,7 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ServiceDetails = () => {
 
+    // <PrivateRoute path="/services/:serviceId">
+
+
     const { serviceId } = useParams();
+    console.log(serviceId)
 
     const [serviceDetails, setServiceDetails] = useState([]);
 
@@ -13,10 +17,11 @@ const ServiceDetails = () => {
 
         try {
             async function singleService() {
-                let res = await fetch('/serviceData.json');
+                let res = await fetch('./serviceData.json');
                 res = await res.json();
                 res = await res.find(serviceDetails => serviceDetails.id === serviceId);
                 setServiceDetails(res)
+                console.log('serviceDetails', serviceDetails);
             }
             singleService();
         }
