@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "Choose to be Happy",
+        "image": "freebies/Choose-to-be-Happy.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Keep Moving Forward",
+        "image": "freebies/Keep-Moving-Forward.jpg"
+    },
+    {
+        "id": 3,
+        "title": "I Am Made For More",
+        "image": "freebies/i-am-made-for-more.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Be Free",
+        "image": "freebies/be-free.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Unplug Yourself",
+        "image": "freebies/unplug-Yourself.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Give Yourself a Break",
+        "image": "freebies/Give-Yourself-a-Break.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Follow Your Bliss",
+        "image": "freebies/Follow-Your-Bliss.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Make Your Own Magic",
+        "image": "freebies/Make-Your-Own-Magic.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Smile Sparkle Shine",
+        "image": "freebies/Smile-Sparkle-Shine.jpg"
+    },
+    {
+        "id": 10,
+        "title": "First Love YourSelf",
+        "image": "freebies/First-Love-YourSelf-scaled.jpg"
+    },
+    {
+        "id": 11,
+        "title": "You Deserve Better",
+        "image": "freebies/You-Deserve-Better.jpg"
+    },
+    {
+        "id": 12,
+        "title": "You are Capable of Amazing Things",
+        "image": "freebies/you-are-capable-of-doing-amazing-thing.jpg"
+    }
+]

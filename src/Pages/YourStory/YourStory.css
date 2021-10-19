@@ -1,0 +1,25 @@
+.story-img{
+    filter: brightness(50%);
+}
+
+.story-txt{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: azure;
+  font-size: 70px;
+}
+
+.story-btn{
+    display: flex;
+    justify-content: end;
+}
+
+
+/* make responsive */
+@media only screen and (max-width:688px) {
+    .story-txt{
+        display: none;
+    }
+}

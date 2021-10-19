@@ -5,23 +5,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ServiceDetails = () => {
 
-    const [myservices, setMyservices] = useState([]);
+    const { serviceId } = useParams();
+
+    const [serviceDetails, setServiceDetails] = useState([]);
 
     useEffect(() => {
-        async function serviceData() {
-            try {
-                const res = await fetch('./serviceData.json');
-                const data = await res.json();
-                setMyservices(data)
+
+        try {
+            async function singleService() {
+                let res = await fetch('/serviceData.json');
+                res = await res.json();
+                res = await res.find(serviceDetails => serviceDetails.id === serviceId);
+                setServiceDetails(res)
             }
-            catch (error) {
-                console.log(error)
-            }
-        };
-        serviceData();
+            singleService();
+        }
+
+        catch (error) {
+            console.log(error)
+        }
+
+
     }, [])
 
-    const { id } = useParams();
+    const title = serviceDetails.hasOwnProperty('title') ? serviceDetails.title : null;
+    const image = serviceDetails.hasOwnProperty('image') ? serviceDetails.image : null;
+    const subtitle = serviceDetails.hasOwnProperty('subtitle') ? serviceDetails.subtitle : null;
 
 
     return (
@@ -30,19 +39,17 @@ const ServiceDetails = () => {
                 <h2 style={{ color: 'orange' }} className="my-5">We Are Here To Listen You Dear!</h2>
 
                 <Row xs={1} md={3} className="g-4">
-                    {
-                        myservices.map(service => <Col key={id}>
-                            <Card className="card-height">
-                                <Card.Img variant="top" className="course-img" src={service.image} />
-                                <Card.Body>
-                                    <Card.Title>{service.title}</Card.Title>
-                                    <Card.Text>
-                                        {service.subtitle}
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>)
-                    }
+                    <Col >
+                        <Card className="card-height">
+                            <Card.Img variant="top" className="course-img" src={image} />
+                            <Card.Body>
+                                <Card.Title>{title}</Card.Title>
+                                <Card.Text>
+                                    {subtitle}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
                 </Row>
             </Container>
         </div>

@@ -5,7 +5,6 @@ import Service from '../Service/Service';
 const Services = () => {
 
     const [myservices, setMyservices] = useState([]);
-    const [info, setInfo] = useState([]);
 
     useEffect(() => {
         async function serviceData() {
