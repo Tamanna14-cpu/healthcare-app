@@ -3,6 +3,7 @@ import { useState } from "react";
 import React from 'react';
 import useAuth from '../../../Hooks/useAuth';
 import './Login.css';
+import { useHistory, useLocation } from "react-router";
 
 
 const Login = () => {
@@ -14,6 +15,7 @@ const Login = () => {
     const [isLogIn, setIsLogIn] = useState(false);
 
     const auth = getAuth();
+
 
     // for email auth
     const handleNameChange = e => {
@@ -104,7 +106,47 @@ const Login = () => {
     }
 
 
-    const { signInUsingGoogle, handleGithubSignIn } = useAuth();
+    const { signInUsingGoogle, handleGithubSignIn, setIsLoading, setUser } = useAuth();
+
+
+
+
+    // for redirect
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from || '/home';
+
+    // google redirect
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then((result) => {
+                setUser(result.user);
+                history.push(redirect_url);
+            })
+            .finally(() => setIsLoading(false));
+
+    }
+
+    // github redirect
+    const handleGithubLogin = () => {
+        handleGithubSignIn()
+            .then(result => {
+                const { displayName, email, photoURL } = result.user;
+                // console.log(result.user);
+                const loggedInUser = {
+                    name: displayName,
+                    email: email,
+                    photo: photoURL
+                };
+                setUser(loggedInUser);
+                history.push(redirect_url);
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
+    }
+
+
 
 
     return (
@@ -164,10 +206,10 @@ const Login = () => {
 
                     <div className="row mt-4">
                         <div className="col-sm-12 col-md-6">
-                            <button onClick={signInUsingGoogle} className="btn btn-outline-secondary btn-lg" type="submit" ><i className="fab fa-google me-3"></i>Sign in with Google</button>
+                            <button onClick={handleGoogleLogin} className="btn btn-outline-secondary btn-lg" type="submit" ><i className="fab fa-google me-3"></i>Sign in with Google</button>
                         </div>
                         <div className="col-sm-12 col-md-6">
-                            <button onClick={handleGithubSignIn} className="btn btn-outline-secondary btn-lg" type="submit" ><i className="fab fa-github me-3"></i>Sign in with Github</button>
+                            <button onClick={handleGithubLogin} className="btn btn-outline-secondary btn-lg" type="submit" ><i className="fab fa-github me-3"></i>Sign in with Github</button>
                         </div>
                     </div>
                 </div>

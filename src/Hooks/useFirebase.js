@@ -18,30 +18,15 @@ const useFirebase = () => {
         setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
 
-        signInWithPopup(auth, googleProvider)
-            .then((result) => {
-                setUser(result.user);
-            })
-            .finally(() => setIsLoading(false));
+        return signInWithPopup(auth, googleProvider)
+
     }
 
     // for github auth
     const handleGithubSignIn = () => {
         const githubProvider = new GithubAuthProvider();
-        signInWithPopup(auth, githubProvider)
-            .then(result => {
-                const { displayName, email, photoURL } = result.user;
-                // console.log(result.user);
-                const loggedInUser = {
-                    name: displayName,
-                    email: email,
-                    photo: photoURL
-                };
-                setUser(loggedInUser);
-            })
-            .catch(error => {
-                console.log(error.message);
-            })
+        return signInWithPopup(auth, githubProvider)
+
     }
 
 
@@ -76,7 +61,9 @@ const useFirebase = () => {
         isLoading,
         signInUsingGoogle,
         logOut,
-        handleGithubSignIn
+        handleGithubSignIn,
+        setIsLoading,
+        setUser
     }
 }
 
