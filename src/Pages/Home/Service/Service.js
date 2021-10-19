@@ -12,7 +12,7 @@ const Service = ({ service }) => {
     return (
         <>
             <Col>
-                <Card className="card-height">
+                <Card className="card-height service-card">
                     <Card.Img variant="top" className="course-img" src={image} />
                     <Card.Body>
                         <Card.Text>
@@ -23,7 +23,7 @@ const Service = ({ service }) => {
                         </Card.Text>
                         <Card.Title>
                             <div className="d-flex justify-content-between gap-5">
-                                <div>{subtitle}</div>
+                                <div className="card-title">{subtitle}</div>
                                 <div><i className="fas fa-share-alt mt-2 share-icon"></i></div>
                             </div>
                         </Card.Title>
