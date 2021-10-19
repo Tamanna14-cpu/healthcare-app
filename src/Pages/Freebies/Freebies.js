@@ -49,8 +49,8 @@ const Freebies = () => {
                             <Card className="card-height">
                                 <div className="freebies-container">
                                     <Card.Img variant="top" className="freebies-img" src={freebook.image} />
-                                    <div class="overlay">
-                                        <div class="text">Do you feel like something is missing in your life? Do you want to make a bigger difference, but you are not sure how? The day you find out the purpose of your life is the day you achieve some of it. ...</div>
+                                    <div className="overlay">
+                                        <div className="text">Do you feel like something is missing in your life? Do you want to make a bigger difference, but you are not sure how? The day you find out the purpose of your life is the day you achieve some of it. ...</div>
                                     </div>
                                 </div>
                             </Card>

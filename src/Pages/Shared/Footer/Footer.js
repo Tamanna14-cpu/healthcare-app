@@ -60,7 +60,7 @@ const Footer = () => {
                                     <input type="text" placeholder="search here...." name="search" />
                                     <input type="button" value="Go" />
                                 </form>
-                                <p>That's technology limitation of LCD monitors</p>
+                                <p>This is site is done by @TamannaBithy, 2021</p>
                             </div>
                         </div>
                     </div>

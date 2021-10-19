@@ -70,7 +70,7 @@ const Team = () => {
                     <Row className="gy-4 problem-part shadow p-5 my-5 ms-5">
                         <h4>Our team of board-certified physicians and other mental health professionals ensures our content is accurate, up-to-date, and inclusive.</h4>
 
-                        <button className="btn btn-outline-secondary">Meet The Team <i class="fas fa-angle-double-right"></i></button>
+                        <button className="btn btn-outline-secondary">Meet The Team <i className="fas fa-angle-double-right"></i></button>
                         {
                             members.map(member => <Col xs={12} md={4} key={member.id}>
                                 <Card className="card-height">

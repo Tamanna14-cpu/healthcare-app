@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Container, Card, Col, Row } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './ServiceDetails.css';
 
 const ServiceDetails = () => {
 
@@ -39,8 +40,8 @@ const ServiceDetails = () => {
             <Container>
                 <h2 style={{ color: 'orange' }} className="my-5">We Are Here To Listen You Dear!</h2>
 
-                <Row xs={1} md={3} className="g-4">
-                    <Col >
+                <Row className="g-4 mt-4">
+                    <Col xs={12} md={5}>
                         <Card className="card-height">
                             <Card.Img variant="top" className="course-img" src={image} />
                             <Card.Body>
@@ -51,6 +52,11 @@ const ServiceDetails = () => {
                                 </Card.Text>
                             </Card.Body>
                         </Card>
+                    </Col>
+
+                    <Col xs={12} md={4}>
+                        <h4>Don't feel alone ever <br /> Enjoy Life & Keep <span className="red-text">Loving</span> youself...</h4>
+                        <div id="likes" className="like"></div>
                     </Col>
                 </Row>
             </Container>
