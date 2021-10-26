@@ -2,6 +2,9 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import './Service.css';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Service = ({ service }) => {
 
@@ -12,7 +15,7 @@ const Service = ({ service }) => {
     return (
         <>
             <Col>
-                <Card className="card-height service-card">
+                <Card className="card-height service-card" data-aos="fade-up">
                     <Card.Img variant="top" className="course-img" src={image} />
                     <Card.Body>
                         <Card.Text>
@@ -29,7 +32,7 @@ const Service = ({ service }) => {
                         </Card.Title>
                     </Card.Body>
                     <Link to={`/services/${id}`} className="see-btn">
-                        <button type="button" className="btn btn-link ">See More</button>
+                        <button type="button" className="btn btn-outline-secondary ">See More</button>
                     </Link>
                 </Card>
             </Col>

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Freebies.css';
 import storyImg from '../../images/write-a-story.jpg';
 import { Card, Col, Container, Dropdown, Row } from 'react-bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Freebies = () => {
 
@@ -46,7 +49,7 @@ const Freebies = () => {
                 <Row>
                     {
                         freebies.map(freebook => <Col xs={6} md={3} key={freebook.id}>
-                            <Card className="card-height">
+                            <Card className="card-height" data-aos="fade-up">
                                 <div className="freebies-container">
                                     <Card.Img variant="top" className="freebies-img" src={freebook.image} />
                                     <div className="overlay">

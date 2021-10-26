@@ -61,7 +61,7 @@ const Login = () => {
                 console.log(user);
                 setError('');
                 verifyEmail();
-                setUserName();
+                setUserName(result.user);
             })
             .catch((error) => {
                 setError(error.message);
@@ -69,10 +69,11 @@ const Login = () => {
     }
 
     // for set user name in firebase
-    const setUserName = () => {
+    const setUserName = (details) => {
         updateProfile(auth.currentUser, { displayName: name })
-            .then(() => {
-
+            // for avoiding reload issue to display username
+            .then(result => {
+                setUser({ ...details, displayName: name })
             })
     }
 

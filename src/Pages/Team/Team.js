@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import './Team.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Team = () => {
 
@@ -48,7 +51,7 @@ const Team = () => {
 
             <Row className="gap-5">
                 <Col xs={12} md={4}>
-                    <Row className="gy-4 problem-part shadow-lg p-5 my-5">
+                    <Row className="gy-4 problem-part shadow-lg p-5 my-5" data-aos="fade-right">
                         <h4>What Kind Of problem You have? <br /> Just let us <span className="team-text">Know...</span></h4>
                         {
                             teams.map(team => <Col xs={12} md={6} key={team.id}>
@@ -67,7 +70,7 @@ const Team = () => {
 
 
                 <Col xs={12} md={7}>
-                    <Row className="gy-4 problem-part shadow p-5 my-5 ms-5">
+                    <Row className="gy-4 problem-part shadow p-5 my-5 ms-5" data-aos="fade-left">
                         <h4>Our team of board-certified physicians and other mental health professionals ensures our content is accurate, up-to-date, and inclusive.</h4>
 
                         <button className="btn btn-outline-secondary">Meet The Team <i className="fas fa-angle-double-right"></i></button>

@@ -6,6 +6,7 @@ import { Box } from '@mui/system';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import Typist from 'react-typist';
 
 const YourStory = () => {
     return (
@@ -15,7 +16,12 @@ const YourStory = () => {
 
             <div className="my-5 pt-5">
                 <h2 >SHARE YOUR PERSONAL STORIES OF TRIUMPH</h2>
-                <h5 className="text-muted my-3">It is possible to overcome the mental health problems, all it takes is a little willpower and some help. Share your <br /> stories of recovery & inspire people in overcoming their struggles of various kinds.</h5>
+                <h5 className="text-muted my-3">
+                    <Typist >
+                        It is possible to overcome the mental health problems, all it takes is a little willpower and some help. Share your <br /> stories of recovery & inspire people in overcoming their struggles of various kinds.
+                    </Typist>
+
+                </h5>
             </div>
 
             <Box

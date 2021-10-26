@@ -7,6 +7,9 @@
 .see-btn{
    display: flex;
    flex-direction: initial ;
+   text-decoration: none;
+   justify-content: center;
+   margin-bottom: 25px;
 }
 
 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
+import Typist from 'react-typist';
 import Service from '../Service/Service';
+
 
 const Services = () => {
 
@@ -25,8 +27,18 @@ const Services = () => {
     return (
         <div className="container my-5">
             <h1 className="fw-bold font-monospace">MENTAL HEALTH A-Z!</h1>
-            <h5 className="text-muted my-4 lh-lg">Immerse yourself in our posts and be swept away to a world that is separate from yours. Thus, unraveling from all the <br /> dilemmas, stress & problems you might have.</h5>
+            <h5 className="text-muted my-4 lh-lg">
+                <Typist cursor={{
+                    show: false,
+                    blink: true,
+                    element: '|',
+                    hideWhenDone: false,
+                    hideWhenDoneDelay: 1000,
+                }}>
+                    Immerse yourself in our posts and be swept away to a world that is separate from yours. Thus, unraveling from all the <br /> dilemmas, stress & problems you might have.
+                </Typist>
 
+            </h5>
 
             <Row xs={1} md={3} className="g-4 my-5 pb-5">
                 {

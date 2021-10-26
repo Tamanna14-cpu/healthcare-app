@@ -15,6 +15,7 @@ import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import YourStory from './Pages/YourStory/YourStory';
 import Freebies from './Pages/Freebies/Freebies';
 import Team from './Pages/Team/Team';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
 
 
 
@@ -23,40 +24,42 @@ function App() {
     <div className="App">
       <AuthProvider>
         <Router>
-          <Header></Header>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/home">
-              <Home />
-            </Route>
-            <Route path="/login">
-              <Login></Login>
-            </Route>
+          <ScrollToTop>
+            <Header></Header>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/home">
+                <Home />
+              </Route>
+              <Route path="/login">
+                <Login></Login>
+              </Route>
 
-            <PrivateRoute path="/services/:serviceId">
-              <ServiceDetails></ServiceDetails>
-            </PrivateRoute>
+              <PrivateRoute path="/services/:serviceId">
+                <ServiceDetails></ServiceDetails>
+              </PrivateRoute>
 
-            <PrivateRoute path="/story">
-              <YourStory></YourStory>
-            </PrivateRoute>
+              <PrivateRoute path="/story">
+                <YourStory></YourStory>
+              </PrivateRoute>
 
-            <PrivateRoute path="/freebies">
-              <Freebies></Freebies>
-            </PrivateRoute>
+              <PrivateRoute path="/freebies">
+                <Freebies></Freebies>
+              </PrivateRoute>
 
 
-            <Route path="/team">
-              <Team></Team>
-            </Route>
+              <Route path="/team">
+                <Team></Team>
+              </Route>
 
-            <Route path="*">
-              <Notfound></Notfound>
-            </Route>
-          </Switch>
-          <Footer></Footer>
+              <Route path="*">
+                <Notfound></Notfound>
+              </Route>
+            </Switch>
+            <Footer></Footer>
+          </ScrollToTop>
         </Router>
       </AuthProvider>
 
